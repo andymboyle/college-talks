@@ -1,0 +1,51 @@
+@media only screen and (max-width: 550px) {
+
+  .col-label {
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    width: 110px;
+  }
+
+  /* Force table to not be like tables anymore */
+  /* line 423, scss/style.scss */
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  /* line 428, scss/style.scss */
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* line 434, scss/style.scss */
+  #no-more-tables tr {
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  /* line 438, scss/style.scss */
+  #no-more-tables tr td:first-child {
+    background-color: #eeeeee;
+  }
+
+  /* line 443, scss/style.scss */
+  #no-more-tables td {
+    /* Behave  like a "row" */
+    white-space: normal;
+    text-align: center;
+  }
+}
